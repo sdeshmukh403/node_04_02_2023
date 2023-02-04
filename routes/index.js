@@ -5,8 +5,7 @@ let apis = require('../api')
 
 /* GET home page. */
 router.get('/', async function(req, res, next) {
-  let doe = await apis.getData()
-  console.log('doe', doe)
+
   res.render('index', { title: 'Express' });
 });
 
